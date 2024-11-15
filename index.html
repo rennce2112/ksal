@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Event Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to Our Wedding Celebration</h1>
+            <p>Join us in celebrating our love story.</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Our Story</h2>
+        <p>Our journey started when...</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Our Memories</h2>
+        
+        <!-- Image Slider Container -->
+        <div class="slider">
+            <button class="prev-button" onclick="prevImage()">&#60;</button> <!-- '<' symbol for Previous button -->
+            <img id="slider-image" src="photo/bg-image3.jpg" alt="Slide Image">
+            <button class="next-button" onclick="nextImage()">&#62;</button> <!-- '>' symbol for Next button -->
+            <div id="caption" class="caption">This is the first image caption.</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
